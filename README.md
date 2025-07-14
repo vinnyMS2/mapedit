@@ -1,13 +1,28 @@
-# Web-based Map Viewer
+# C++ Map Viewer
 
-This is a simple web-based application to view `.map` files.
+This is a simple command-line application to view `.map` files, written in C++.
+
+## Building the Application
+
+To build the application, you will need to have `cmake` and `make` installed.
+
+1. Create a build directory: `mkdir build`
+2. Navigate to the build directory: `cd build`
+3. Run cmake: `cmake ..`
+4. Run make: `make`
 
 ## Usage
 
-To use the map viewer, open the `index.html` file in your web browser. Then, click the "Choose File" button to select a `.map` file from your local machine. The map will be displayed on the page.
+To use the map viewer, run the following command from the `build` directory:
+
+```bash
+./map_viewer <path_to_map_file>
+```
+
+Replace `<path_to_map_file>` with the actual path to your `.map` file. You will need to provide the path relative to the `build` directory.
 
 ### Example
 
-1. Open `index.html` in your browser.
-2. Click "Choose File" and select `test.map`.
-3. The map will be rendered on the page.
+```bash
+./map_viewer ../test.map
+```
