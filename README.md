@@ -1,19 +1,13 @@
-# Map Viewer
+# Web-based Map Viewer
 
-This is a simple command-line application to view `.map` files.
+This is a simple web-based application to view `.map` files.
 
 ## Usage
 
-To use the map viewer, run the following command in your terminal:
-
-```bash
-python map_viewer.py <path_to_map_file>
-```
-
-Replace `<path_to_map_file>` with the actual path to your `.map` file.
+To use the map viewer, open the `index.html` file in your web browser. Then, click the "Choose File" button to select a `.map` file from your local machine. The map will be displayed on the page.
 
 ### Example
 
-```bash
-python map_viewer.py test.map
-```
+1. Open `index.html` in your browser.
+2. Click "Choose File" and select `test.map`.
+3. The map will be rendered on the page.
