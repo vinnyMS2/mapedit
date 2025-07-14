@@ -1,28 +1,27 @@
-# C++ Map Viewer
+# SciPy Map Viewer
 
-This is a simple command-line application to view `.map` files, written in C++.
+This is a simple command-line application to view `.map` files, written in Python with SciPy.
 
-## Building the Application
+## Dependencies
 
-To build the application, you will need to have `cmake` and `make` installed.
+To run this application, you will need to have Python installed, as well as the `numpy` and `scipy` libraries. You can install these libraries using pip:
 
-1. Create a build directory: `mkdir build`
-2. Navigate to the build directory: `cd build`
-3. Run cmake: `cmake ..`
-4. Run make: `make`
+```bash
+pip install numpy scipy
+```
 
 ## Usage
 
-To use the map viewer, run the following command from the `build` directory:
+To use the map viewer, run the following command in your terminal:
 
 ```bash
-./map_viewer <path_to_map_file>
+python scipy_map_viewer.py <path_to_map_file>
 ```
 
-Replace `<path_to_map_file>` with the actual path to your `.map` file. You will need to provide the path relative to the `build` directory.
+Replace `<path_to_map_file>` with the actual path to your `.map` file.
 
 ### Example
 
 ```bash
-./map_viewer ../test.map
+python scipy_map_viewer.py test.map
 ```
